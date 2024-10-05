@@ -1,5 +1,9 @@
 # Tenable-Utility
-Tenable-Utility is a bash script designed to streamline administrative tasks for Tenable.sc and Nessus. It includes functions to manage user accounts, lock/unlock users, reset passwords, and perform various operations on Nessus user accounts.
+Tenable-Utility is a script designed to streamline the management of user accounts in Tenable.sc and Nessus. This utility allows for locking and unlocking accounts, resetting passwords, and managing Nessus users efficiently.
+
+Additionally, the script can check the installation status and version numbers of both Tenable.sc and Nessus, helping administrators easily verify that these applications are installed and up to date.
+
+
 ## Features
 - Unlock or lock the admin or all user accounts in Tenable.sc.
 - Unlock or lock a specific user by providing their user ID.
@@ -9,6 +13,8 @@ Tenable-Utility is a bash script designed to streamline administrative tasks for
     - Remove an existing Nessus user.
     - Change a Nessus user's password.
     - List current Nessus users.
+- Display the installation status and version numbers of Tenable.sc and Nessus.
+   
 
 ## Requirements
 - Tenable.sc (formerly SecurityCenter) and/or Nessus installed on the system.
@@ -25,9 +31,14 @@ chmod +x Tenable-Utility.sh
 ```bash
 sudo ./Tenable-Utility.sh
 ```
-When executed, the script will display a menu that allows you to choose from various administrative options related to Tenable.sc and Nessus.
+Once the script is executed, you will see a welcome message and a menu of options to manage Tenable.sc and Nessus user accounts. The script will also display the installation status and version numbers of Tenable.sc and Nessus to help verify if they are installed and working as expected.
 
-## Menus
+### Example Installation Status Output:
+```bash
+Tenable.sc:   6.4.0
+Nessus:       10.8.0
+```
+
 ### Tenable.sc User Management
 After running the script, you'll be presented with a menu. Pick an option to perform the corresponding task:
 ```bash
