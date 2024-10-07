@@ -35,8 +35,17 @@ Once the script is executed, you will see a welcome message and a menu of option
 
 ### Example Installation Status Output:
 ```bash
-Tenable.sc:   6.4.0
-Nessus:       10.8.0
+==============================================
+          Welcome to the Tenable Utility
+          Script for Managing Tenable.sc
+            and Nessus User Accounts
+==============================================
+
+      This script helps you manage user
+     accounts in Tenable.sc and Nessus.
+
+Tenable.sc:   Not installed (or version number)
+Nessus:       Not installed (or version number)
 ```
 
 ### Tenable.sc User Management
