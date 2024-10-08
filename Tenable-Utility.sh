@@ -49,16 +49,56 @@ get_nessus_version() {
   fi
 }
 
+# Gets the version number of Nessus Agents
+get_nessus_agent_version() {
+  if [ -f "/opt/nessus_agent/sbin/nessuscli" ]; then
+    VERSION=$(/opt/nessus_agent/sbin/nessuscli -v)
+    echo "$VERSION"
+  else
+    echo "Not installed"
+  fi
+} 
+
+# Gets the version number of Nessus Network Monitor
+get_nnm_version() {
+  if [ -f "/opt/nnm/" ]; then
+    VERSION=$(/opt/nnm/bin/nnm -v)
+    echo "$VERSION"
+  else
+    echo "Not installed"
+  fi
+} 
+lced -v
+# Gets the version number of Tenable Log Correlation Engine
+get_lce_version() {
+  if [ -f "/opt/lce/" ]; then
+    VERSION=$(/opt/lce/daemons/lced -v)
+    echo "$VERSION"
+  else
+    echo "Not installed"
+  fi
+} 
+
 # Displays installation status of Tenable.sc and Nessus with version numbers
 display_installation_status() {
   local sc_version
   local nessus_version
+  local nessus_agent
+  local nnm_version
+  local lce_version
 
   sc_version=$(get_tenable_sc_version)
   nessus_version=$(get_nessus_version)
+  nessus_agent=$(get_nessus_agent_version)
+  nnm_version=$(get_nnm_version)
+  lce_version=$(get_lce_version)
+
 
   echo -e "Tenable.sc:\t ${sc_version}"
   echo -e "Nessus:\t\t ${nessus_version}"
+  echo -e "Nessus Agent:\t ${nessus_agent}"
+  echo -e "NNM:\t\t ${nnm_version}"
+  echo -e "LCE:\t\t ${lce_version}"
 }
 
 # Displays a welcome message

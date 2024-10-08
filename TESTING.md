@@ -38,9 +38,11 @@ Expected Output:
       This script helps you manage user
      accounts in Tenable.sc and Nessus.
 
-Tenable.sc:   Not installed (or version number)
-Nessus:       Not installed (or version number)
-
+Tenable.sc:      Not installed (or version number)
+Nessus:          Not installed (or version number)
+Nessus Agent:	 Not installed (or version number)
+NNM:		     Not installed (or version number)
+LCE              Not installed (or version number)
 ```
 ### 2. Test: Admin Account Unlock
 ```bash

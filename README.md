@@ -44,8 +44,11 @@ Once the script is executed, you will see a welcome message and a menu of option
       This script helps you manage user
      accounts in Tenable.sc and Nessus.
 
-Tenable.sc:   Not installed (or version number)
-Nessus:       Not installed (or version number)
+Tenable.sc:      Not installed (or version number)
+Nessus:          Not installed (or version number)
+Nessus Agent:	 Not installed (or version number)
+NNM:		     Not installed (or version number)
+LCE              Not installed (or version number)
 ```
 
 ### Tenable.sc User Management
